@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import {sp, tab, pc} from "../utils/media"
 import styled from "styled-components";
 
-export default function ChatCat() {
+export default function HardChatCat() {
 
-    const [showChat, setShowChat] = useState<string[]>(['mew... meow meow meow']);
+    const [showChat, setShowChat] = useState<string[]>(['meoooooooown!! meooooo!']);
     const [isRunning, setIsRunning] = useState(true);
     const [isCloseChat, setIsCloseChat] = useState("");
   
@@ -48,7 +48,7 @@ export default function ChatCat() {
                     ×
                 </label>
             </div>
-            <img src="/img/typingCat.gif" />
+            <img src="/img/HardTypingCat.gif" />
             <div className="chatBox">
                 {showChat.map((dialogue, i) => <li key={i}>Local Cat：{dialogue}</li>)}
             </div>
@@ -73,10 +73,10 @@ const useInterval = (callback: Function, delay?: number | null) => {
   };
 
 const ChatCollection = [
-    'mew... meow meow meow',
-    'meow meow?! MEOW meow!?!?',
-    'meow meow ?? meow ...',
-    'meow meow meow?',
+    'meooooooooow !!!',
+    'meow meow?! MEOW meow meow!?!?',
+    'meooooooow??? meoooooow!!!!',
+    'meow meow meowwwwwn!',
     'meow meow meow meowwwn'
 ]
 
@@ -89,7 +89,10 @@ display: ${({ isCloseChat }) => isCloseChat};
     position: fixed;
     bottom:0;
     right: 0;
-
+  img {
+      width: 320px;
+      height: 180px;
+  }
   .chatTitle{
     color: white;
     text-align: center;
