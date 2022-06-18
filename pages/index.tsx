@@ -9,15 +9,12 @@ export default function Home() {
   const [catUrls, setCatUrls] = useState([]); 
 
     useEffect(() => {
-      for (let i = 0; i < 6; i++) {
         fetch("https://api.thecatapi.com/v1/images/search")
         .then((response: Response) => response.json())
         .then((json) => {
             const URL = json[0].url;
             setCatUrls([...catUrls, URL])
         })
-      }
-        
   }, []);
 
     return (
@@ -28,31 +25,31 @@ export default function Home() {
                 <CardWrap>
                     <p>Amanda</p>
                     <img className="img" src={catUrls[0]}/>
-                    <p>From your local: ...15km</p>
+                    <p>From your local: ...2km</p>
                 </CardWrap>
                 <CardWrap>
                     <p>Jill</p>
-                    <img className="img" src={catUrls[1]}/>
+                    <img className="img" src="img/closeUpCat.gif"/>
                     <p>From your local: ...7km</p>
                 </CardWrap>
                 <CardWrap>
                     <p>Chris</p>
-                    <img className="img" src={catUrls[2]}/>
+                    <img className="img" src="img/toungCat.gif"/>
                     <p>From your local: ...11km</p>
                 </CardWrap>
                 <CardWrap>
                     <p>Jessy</p>
-                    <img className="img" src={catUrls[3]}/>
+                    <img className="img" src="img/winkCat.gif"/>
                     <p>From your local: ...5km</p>
                 </CardWrap>
                 <CardWrap>
                     <p>Cham</p>
-                    <img className="img" src={catUrls[4]}/>
-                    <p>From your local: ...3km</p>
+                    <img className="img" src="img/cat.gif"/>
+                    <p>From your local: ...6km</p>
                 </CardWrap>
                 <CardWrap>
                     <p>Rose</p>
-                    <img className="img" src={catUrls[5]}/>
+                    <img className="img" src="img/catKiss.gif"/>
                     <p>From your local: ...10km</p>
                 </CardWrap>
 

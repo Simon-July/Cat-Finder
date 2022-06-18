@@ -12,11 +12,13 @@ export default function about() {
             <h3 className="subtitle">Find Hot Local Cats in YOUR AREA</h3>
             </HeadlineContainer>
             <p>Thanks for access this page.<br/>
-               This homepage refers <a href="https://adultcatfinder.com/">this page</a> to create this homepage, 
-               and use <a href="https://thecatapi.com">this API</a> . <br/>
-               It is impossible to find how to use Script of Adult Cat Finder through Typescript, <br/>
+               This homepage refers <a href="https://adultcatfinder.com/">this page</a>  and use <a href="https://thecatapi.com">this API</a> <br/>
+               to create this homepage.
+               It is impossible to find how to use Script of Adult Cat Finder through Typescript, 
                so I made mock contents from 1. <br/>
-               I appreciate your awesome inspiration for creating funny contents, thanks!!
+               The chat system doesn't work, but it looks like chatting you.
+               I appreciate your awesome inspiration for creating funny contents, thanks!!<br />
+               I'm a dog person, by the way.
             </p>
             <Link href="/">
               Back
