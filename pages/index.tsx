@@ -23,34 +23,34 @@ export default function Home() {
             <ChatCat />
             <CatWrap>
                 <CardWrap>
-                    <p>Amanda</p>
                     <img className="img" src={catUrls[0]}/>
-                    <p>From your local: ...2km</p>
+                    <p>Amanda</p>
+                    <p className="place">From your local: ...2km　<span>CLOSE!</span></p>
                 </CardWrap>
                 <CardWrap>
-                    <p>Jill</p>
                     <img className="img" src="img/closeUpCat.gif"/>
-                    <p>From your local: ...7km</p>
+                    <p>Jill</p>
+                    <p className="place">From your local: ...7km</p>
                 </CardWrap>
                 <CardWrap>
-                    <p>Chris</p>
                     <img className="img" src="img/toungCat.gif"/>
-                    <p>From your local: ...11km</p>
+                    <p>Chris</p>
+                    <p className="place">From your local: ...11km</p>
                 </CardWrap>
                 <CardWrap>
-                    <p>Jessy</p>
                     <img className="img" src="img/winkCat.gif"/>
-                    <p>From your local: ...5km</p>
+                    <p>Jessy</p>
+                    <p className="place">From your local: ...5km</p>
                 </CardWrap>
                 <CardWrap>
-                    <p>Cham</p>
                     <img className="img" src="img/cat.gif"/>
-                    <p>From your local: ...6km</p>
+                    <p>Cham</p>
+                    <p className="place">From your local: ...6km</p>
                 </CardWrap>
                 <CardWrap>
-                    <p>Rose</p>
                     <img className="img" src="img/catKiss.gif"/>
-                    <p>From your local: ...10km</p>
+                    <p>Rose</p>
+                    <p className="place">From your local: ...10km</p>
                 </CardWrap>
 
             </CatWrap>
@@ -61,45 +61,67 @@ export default function Home() {
 const CatWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  width: 70%;
   z-index: 0;
+  /* gap: 15px; */
   margin: 3em 1em 1em 1em;
   text-align:center;
-  /* position: absolute; */
+  margin: 0 auto;
 `;
 
 const CardWrap = styled.div`
-  margin: 0 auto;
-  width: calc((100% - 30px * 2) / 3);
-  border-radius: 39px;
-  background: #f8f8f8;
-  box-shadow:  12px 12px 24px #bcbcbc,
-               -12px -12px 24px #ffffff;
+  width: calc((100% - 32px * 3) / 3);
   ${sp`
+    margin-left: 1em;
     width: 60%;
   `}
   ${tab`
-    width: 40%;
+    margin: 0 auto;
+    width: 47%;
   `}
   ${pc`
-    width: 30%;
+    margin: 0 auto;
+    width: 28%;
   `}
 
+  span{
+    font-weight: 600;
+    color: red;
+    ${sp`
+      margin-left: 1em;
+    `}
+  }
+
+  p{
+    margin: 0;
+    ${sp`
+      margin-left: 3em;
+    `}
+  
+  }
+  .place{
+      font-size: 10px;
+      color: #555;
+    ${sp`
+      margin-left: 2em;
+    `}
+    }
+
   .img{
-    margin: 0 auto;
+    margin-top: 1em;
   ${sp`
-    width: 180px;
-    height: 180px;
+    width: 209px;
+    height: 117px;
     object-fit: cover;
   `}
   ${tab`
-    width: 220px;
-    height: 220px;
+    width: 209px;
+    height: 117px;
     object-fit: cover;
   `}
   ${pc`
-    width: 250px;
-    height: 250px;
+    width: 209px;
+    height: 117px;
     object-fit: cover;
   `}
   }
