@@ -25,32 +25,47 @@ export default function Home() {
                 <CardWrap>
                     <img className="img" src={catUrls[0]}/>
                     <p>Amanda</p>
-                    <p className="place">From your local: ...2km　<span>CLOSE!</span></p>
+                    <span>From your local...<span className="place">2km</span><span className="close">CLOSE</span></span>
                 </CardWrap>
                 <CardWrap>
                     <img className="img" src="img/closeUpCat.gif"/>
                     <p>Jill</p>
-                    <p className="place">From your local: ...7km</p>
+                    <span>From your local...<span className="place">7km</span></span>
                 </CardWrap>
                 <CardWrap>
                     <img className="img" src="img/toungCat.gif"/>
                     <p>Chris</p>
-                    <p className="place">From your local: ...11km</p>
+                    <span>From your local...<span className="place">11km</span></span>
                 </CardWrap>
                 <CardWrap>
                     <img className="img" src="img/winkCat.gif"/>
                     <p>Jessy</p>
-                    <p className="place">From your local: ...5km</p>
+                    <span>From your local...<span className="place">5km</span></span>
                 </CardWrap>
                 <CardWrap>
                     <img className="img" src="img/cat.gif"/>
                     <p>Cham</p>
-                    <p className="place">From your local: ...6km</p>
+                    <span>From your local...<span className="place">8km</span></span>
                 </CardWrap>
                 <CardWrap>
                     <img className="img" src="img/catKiss.gif"/>
                     <p>Rose</p>
-                    <p className="place">From your local: ...10km</p>
+                    <span>From your local...<span className="place">13km</span></span>
+                </CardWrap>
+                <CardWrap>
+                    <img className="img" src="img/standingCat.gif"/>
+                    <p>Abigale</p>
+                    <span>From your local...<span className="place">20km</span></span>
+                </CardWrap>
+                <CardWrap>
+                    <img className="img" src="img/tom.gif"/>
+                    <p>Tom</p>
+                    <span>From your local...<span className="place">20km</span></span>
+                </CardWrap>
+                <CardWrap>
+                    <img className="img" src="img/turnningCat.gif"/>
+                    <p>Sherry</p>
+                    <span>From your local...<span className="place">20km</span></span>
                 </CardWrap>
 
             </CatWrap>
@@ -63,17 +78,17 @@ const CatWrap = styled.div`
   flex-wrap: wrap;
   width: 70%;
   z-index: 0;
-  /* gap: 15px; */
-  margin: 3em 1em 1em 1em;
+  padding-top: 3em;
+  padding-bottom: 7em;
   text-align:center;
   margin: 0 auto;
 `;
 
 const CardWrap = styled.div`
-  width: calc((100% - 32px * 3) / 3);
+  width: calc((100% - 30px * 3) / 3);
   ${sp`
     margin-left: 1em;
-    width: 60%;
+    width: 100%;
   `}
   ${tab`
     margin: 0 auto;
@@ -85,27 +100,45 @@ const CardWrap = styled.div`
   `}
 
   span{
-    font-weight: 600;
-    color: red;
-    ${sp`
-      margin-left: 1em;
-    `}
+    font-size: 13px;
+    color: #555;
+
+    .place{
+      display: inline-block;
+      background: #777;
+      border-radius: 3px;
+      color: #fff;
+      font-size: .83em;
+      height: 18px;
+      line-height: 18px;
+      margin-left: 4px;
+      padding: 0 3px;
+      position: relative;
+      vertical-align: top;
+    }
+
+    .close{
+      display: inline-block;
+      background: #e350e2;
+      border-radius: 3px;
+      color: #fff;
+      font-size: .83em;
+      height: 18px;
+      line-height: 18px;
+      margin-left: 4px;
+      padding: 0 3px;
+      position: relative;
+      vertical-align: top;
+    }
   }
 
   p{
     margin: 0;
     ${sp`
-      margin-left: 3em;
+      // margin-left: 3em;
     `}
   
   }
-  .place{
-      font-size: 10px;
-      color: #555;
-    ${sp`
-      margin-left: 2em;
-    `}
-    }
 
   .img{
     margin-top: 1em;

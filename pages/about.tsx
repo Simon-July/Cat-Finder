@@ -20,6 +20,11 @@ export default function about() {
                I appreciate your awesome inspiration for creating funny contents, thanks!!<br />
                I'm a dog person, by the way.
             </p>
+            <ul>
+                <p>【Reference】</p>
+                <li>Adult Cat Finder：<a href="https://adultcatfinder.com/">https://adultcatfinder.com/</a></li>
+                <li>Cat API：<a href="https://thecatapi.com">https://thecatapi.com</a></li>
+            </ul>
             <Link href="/">
               Back
             </Link>
@@ -29,6 +34,7 @@ export default function about() {
 }
 
 const MainWrap = styled.div`
+    padding-bottom: 10em;
     ${sp`
     font-family: sans-serif;
     width: 70%;
