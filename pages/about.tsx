@@ -20,8 +20,8 @@ export default function about() {
                I appreciate your awesome inspiration for creating funny contents, thanks!!<br />
                I'm a dog person, by the way.
             </p>
+            <h4 className="reference">【Reference】</h4>
             <ul>
-                <p>【Reference】</p>
                 <li>Adult Cat Finder：<a href="https://adultcatfinder.com/">https://adultcatfinder.com/</a></li>
                 <li>Cat API：<a href="https://thecatapi.com">https://thecatapi.com</a></li>
             </ul>
@@ -59,10 +59,16 @@ const MainWrap = styled.div`
     margin: 0 auto;
     padding-right: 2%;
     `}
+    ul{
+        margin-bottom: 3em;
+    }
+    li{
+        font-size: 15px;
+        margin-bottom: 0.5em;
+    }
 `;
 
 const HeadlineContainer = styled.div`
-
     text-align: center;
     .title{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
